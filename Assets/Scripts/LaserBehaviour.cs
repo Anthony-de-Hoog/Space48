@@ -8,11 +8,11 @@ public class LaserBehaviour : MonoBehaviour
 
     void Start()
     {
-        move = GetComponent<MovementBehaviour>();
+        move = FindObjectOfType<MovementBehaviour>();
     }
 
     void Update()
     {
-        move.Move(transform, move.moveSpeed, 1f);  
+        move.Move(transform, move.moveSpeed, 10f);  
     }
 }
